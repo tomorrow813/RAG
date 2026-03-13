@@ -1,0 +1,14 @@
+# RAG 核心依赖（新手最小闭环）
+langchain                # 主框架（自动包含 langchain-core/community/text-splitters）
+unstructured             # 解析非结构化文件（PDF/TXT/Word）  本地系统brew安装 poppler 和 tesseract
+unstructured_inference   #  Unstructured 库的「文档布局分析核心子包」
+langchain-huggingface    # 对接 HuggingFace 开源模型
+sentence-transformers    # 开源嵌入模型核心（BGE/all-MiniLM）
+chromadb                 # 本地向量库（存储/检索向量）
+python-dotenv            # 管理环境变量（密钥/模型配置）
+python-docx             #执行UnstructuredWordDocumentLoader需要
+markdown
+pdfminer.six   #提取 PDF 里的原生文本（非图片）
+pi_heif   #解析苹果 HEIF/HEIC 格式图片
+pdf2image  #把 PDF 每页转成图片（PNG/JPG）
+unstructured_pytesseract #：unstructured_pytesseract 依赖系统的 Tesseract OCR 引擎
